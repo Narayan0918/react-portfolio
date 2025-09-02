@@ -10,14 +10,14 @@ export const portfolioData = {
     phone: "7007344437",
     location: "Bhadohi, UP",
     socials: {
-      github: "#", // Replace # with your actual GitHub link
-      linkedin: "#", // Replace # with your actual LinkedIn link
+      github: "https://github.com/Narayan0918", // Replace # with your actual GitHub link
+      linkedin: "https://www.linkedin.com/in/narayan-raj-dubey-191bb6223", // Replace # with your actual LinkedIn link
     },
   },
   skills: {
     technical: [
-      "C", "Java", "JavaScript", "SQL", "React.js", "Node.js", "Express.js",
-      "MongoDB", "RESTful APIs", "Git", "CI/CD", "Netlify", "Render", "MySQL", "GitHub/GitLab",
+      "Java", "JavaScript", "SQL", "React.js", "Node.js", "Express.js",
+      "MongoDB", "Netlify", "Render", "MySQL", "GitHub",
     ],
     professional: [
       "Strong Interpersonal Communication", "Team Leadership & Collaboration", "Strategic Task Prioritization",
@@ -43,14 +43,14 @@ export const portfolioData = {
       techStack: "MERN Stack",
       description:
         "Engineered a full-stack platform enabling users to book verified local service workers. Implemented secure, role-based authentication and real-time messaging, increasing user engagement by 30%.",
-      link: "#", // Replace # with your project link
+      link: "https://service-provider-jzwr.onrender.com/", // Replace # with your project link
     },
     {
       title: "E-commerce Web App",
       techStack: "JavaScript, HTML, CSS",
       description:
         "Built a responsive e-commerce interface with category filtering, product modals, and client-side search, achieving sub-2.5 second load times and enhanced SEO.",
-      link: "#", // Replace # with your project link
+      link: "https://narayan0918.github.io/Bottle-landing-page/", // Replace # with your project link
     },
   ],
   education: [
