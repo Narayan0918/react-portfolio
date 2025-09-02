@@ -1,0 +1,44 @@
+/* src/components/Hero.module.css */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
+}
+
+.title {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.socialLink {
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+.socialLink:hover {
+  color: var(--accent-color);
+}
+
+.socialIcon {
+  width: 28px;
+  height: 28px;
+}
