@@ -1,47 +1,102 @@
 // src/components/Projects.jsx
 
-import styles from './Projects.module.css';
+import {
+  Container,
+  Typography,
+  Grid,
+  Card,
+  CardContent,
+  CardActions,
+  Button,
+  Chip,
+  Box,
+} from '@mui/material';
+import LinkIcon from '@mui/icons-material/Link';
+import { motion } from 'framer-motion';
 
-const ExternalLinkIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={styles.linkIcon}
-  >
-    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-    <polyline points="15 3 21 3 21 9"></polyline>
-    <line x1="10" y1="14" x2="21" y2="3"></line>
-  </svg>
-);
+// Animation for the container to stagger children
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+// Animation for each individual project card
+const itemVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
 
 const Projects = ({ data }) => {
   return (
-    <section className="section">
-      <h2 className={styles.title}>Projects</h2>
-      <div className={styles.projectsGrid}>
-        {data.map((project) => (
-          <div key={project.title} className={styles.projectCard}>
-            <h3 className={styles.projectTitle}>{project.title}</h3>
-            <ul className={styles.techList}>
-              {project.techStack.split(', ').map((tech) => (
-                <li key={tech} className={styles.techItem}>
-                  {tech}
-                </li>
-              ))}
-            </ul>
-            <p className={styles.projectDescription}>{project.description}</p>
-            <a href={project.link} className={styles.projectLink} target="_blank" rel="noopener noreferrer">
-              View Project <ExternalLinkIcon />
-            </a>
-          </div>
-        ))}
-      </div>
-    </section>
+    <Box sx={{ py: 8 }}>
+      <Container>
+        <Typography variant="h2" component="h2" align="center" gutterBottom>
+          Projects
+        </Typography>
+        <Grid
+          component={motion.div}
+          container
+          spacing={4}
+          sx={{ mt: 5 }}
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
+          {data.map((project) => (
+            // Grid item for responsive layout
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              key={project.title}
+              component={motion.div}
+              variants={itemVariants}
+            >
+              {/* MUI Card for each project */}
+              <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', borderRadius: 2 }}>
+                <CardContent sx={{ flexGrow: 1 }}>
+                  <Typography variant="h6" component="h3" gutterBottom>
+                    {project.title}
+                  </Typography>
+                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, my: 2 }}>
+                    {project.techStack.split(', ').map((tech) => (
+                      <Chip key={tech} label={tech} size="small" />
+                    ))}
+                  </Box>
+                  <Typography variant="body2" color="text.secondary">
+                    {project.description}
+                  </Typography>
+                </CardContent>
+                <CardActions sx={{ px: 2, pb: 2 }}>
+                  <Button
+                    component="a" // Render as an anchor tag
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    startIcon={<LinkIcon />}
+                  >
+                    View Project
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </Box>
   );
 };
 

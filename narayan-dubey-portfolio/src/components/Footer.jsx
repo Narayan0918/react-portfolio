@@ -1,23 +1,47 @@
 // src/components/Footer.jsx
-import styles from './Footer.module.css';
-import { GitHubIcon, LinkedInIcon } from './Icons';
+
+import { Container, Typography, Box, IconButton } from '@mui/material';
+import { GitHub, LinkedIn } from '@mui/icons-material';
+import { motion } from 'framer-motion';
 
 const Footer = ({ data }) => {
   const { name, socials } = data;
   return (
-    <footer className={styles.footer}>
-      <p className={styles.copyright}>
-        © {new Date().getFullYear()} {name}
-      </p>
-      <div className={styles.socials}>
-        <a href={socials.github} className={styles.socialLink} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <GitHubIcon className={styles.socialIcon} />
-        </a>
-        <a href={socials.linkedin} className={styles.socialLink} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <LinkedInIcon className={styles.socialIcon} />
-        </a>
-      </div>
-    </footer>
+    <Box
+      component={motion.div}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      sx={{ borderTop: 1, borderColor: 'divider', mt: 4 }}
+    >
+      <Container sx={{ py: 3 }}>
+        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <Typography variant="body2" color="text.secondary">
+            © {new Date().getFullYear()} {name}
+          </Typography>
+          <Box>
+            <IconButton
+              aria-label="GitHub"
+              color="inherit"
+              href={socials.github}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GitHub />
+            </IconButton>
+            <IconButton
+              aria-label="LinkedIn"
+              color="inherit"
+              href={socials.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedIn />
+            </IconButton>
+          </Box>
+        </Box>
+      </Container>
+    </Box>
   );
 };
 

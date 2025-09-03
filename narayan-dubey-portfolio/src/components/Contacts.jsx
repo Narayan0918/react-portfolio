@@ -1,20 +1,46 @@
 // src/components/Contact.jsx
-import styles from './Contact.module.css';
+
+import { Container, Typography, Button, Box } from '@mui/material';
+import EmailIcon from '@mui/icons-material/Email';
+import { motion } from 'framer-motion';
+
+const sectionVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: 'easeOut' },
+  },
+};
 
 const Contact = ({ data }) => {
   const { email } = data;
   return (
-    <section className="section">
-      <div className={styles.contact}>
-        <h2 className={styles.title}>Get In Touch</h2>
-        <p className={styles.text}>
+    <Box
+      component={motion.div}
+      variants={sectionVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      sx={{ py: 8, textAlign: 'center' }}
+    >
+      <Container>
+        <Typography variant="h2" component="h2" gutterBottom>
+          Get In Touch
+        </Typography>
+        <Typography variant="body1" color="text.secondary" sx={{ maxWidth: '600px', mx: 'auto', mb: 4 }}>
           I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out.
-        </p>
-        <a href={`mailto:${email}`} className={styles.emailLink}>
+        </Typography>
+        <Button
+          variant="outlined"
+          size="large"
+          href={`mailto:${email}`}
+          startIcon={<EmailIcon />}
+        >
           Say Hello
-        </a>
-      </div>
-    </section>
+        </Button>
+      </Container>
+    </Box>
   );
 };
 
