@@ -1,6 +1,6 @@
 // src/components/Footer.jsx
 import styles from './Footer.module.css';
-import { GitHubIcon, LinkedInIcon } from './Icons'; // Import our reusable icons
+import { GitHubIcon, LinkedInIcon } from './Icons';
 
 const Footer = ({ data }) => {
   const { name, socials } = data;
