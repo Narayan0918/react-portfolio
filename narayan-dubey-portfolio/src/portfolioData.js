@@ -4,6 +4,7 @@ export const portfolioData = {
   personalInfo: {
     name: "Narayan Raj Dubey",
     title: "Full-Stack Web Developer",
+    profilePicture: "/profile-picture.jpg", // Add this line
     summary:
       "Final-year Computer Science Engineering student with hands-on experience in building full-stack web applications using JavaScript, React, Node.js, and MongoDB. Proficient in developing scalable, responsive solutions focusing on clean code and performance.",
     email: "narayanrajdubey9889@gmail.com",
@@ -17,7 +18,7 @@ export const portfolioData = {
   skills: {
     technical: [
       "Java", "JavaScript", "SQL", "React.js", "Node.js", "Express.js",
-      "MongoDB", "Netlify", "Render", "MySQL", "GitHub",
+      "MongoDB", "Netlify", "Render", "MySQL", "GitHub", "ChatGPT","Gemini","Claude",
     ],
     professional: [
       "Strong Interpersonal Communication", "Team Leadership & Collaboration", "Strategic Task Prioritization",
