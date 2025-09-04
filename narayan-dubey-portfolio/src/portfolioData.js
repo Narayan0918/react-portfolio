@@ -5,8 +5,7 @@ export const portfolioData = {
     name: "Narayan Raj Dubey",
     title: "Full-Stack Web Developer",
     profilePicture: "/profile-picture.jpg", // Add this line
-    summary:
-      "Final-year Computer Science Engineering student with hands-on experience in building full-stack web applications using JavaScript, React, Node.js, and MongoDB. Proficient in developing scalable, responsive solutions focusing on clean code and performance.",
+    summary: "Results-driven Computer Science graduate specializing in full-stack web development with the MERN stack (MongoDB, Express.js, React, Node.js). Proven ability to deliver scalable, high-performance web applications, demonstrated through internship experience and personal projects. Driven to create efficient, user-centric solutions.",
     email: "narayanrajdubey9889@gmail.com",
     phone: "7007344437",
     location: "Bhadohi, UP",
@@ -17,11 +16,25 @@ export const portfolioData = {
   },
   skills: {
     technical: [
-      "Java", "JavaScript", "SQL", "React.js", "Node.js", "Express.js",
-      "MongoDB", "Netlify", "Render", "MySQL", "GitHub", "ChatGPT","Gemini","Claude",
+      "Java",
+      "JavaScript",
+      "SQL",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Netlify",
+      "Render",
+      "MySQL",
+      "GitHub",
+      "ChatGPT",
+      "Gemini",
+      "Claude",
     ],
     professional: [
-      "Strong Interpersonal Communication", "Team Leadership & Collaboration", "Strategic Task Prioritization",
+      "Strong Interpersonal Communication",
+      "Team Leadership & Collaboration",
+      "Strategic Task Prioritization",
     ],
   },
   experience: [
@@ -52,6 +65,13 @@ export const portfolioData = {
       description:
         "Built a responsive e-commerce interface with category filtering, product modals, and client-side search, achieving sub-2.5 second load times and enhanced SEO.",
       link: "https://narayan0918.github.io/Bottle-landing-page/", // Replace # with your project link
+    },
+    {
+      title: "Student Polling App",
+      techStack: "MERN",
+      description:
+        "Created a full-stack polling application allowing students to create and participate in polls. Implemented JWT authentication and real-time updates, boosting user interaction by 40%.",
+      link: "https://student-polling-app.onrender.com/", // Replace # with your project link
     },
   ],
   education: [

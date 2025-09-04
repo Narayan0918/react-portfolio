@@ -13,13 +13,40 @@ const About = ({ data }) => {
       <Container>
         <Grid container spacing={4} alignItems="center" justifyContent="center">
           <Grid item xs={12} md={4} sx={{ textAlign: 'center' }}>
-            <motion.div
+            {/* This Box is the animated frame */}
+            <Box
+              component={motion.div}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.8, ease: 'easeOut' }}
+              sx={{
+                width: 250,
+                height: 250,
+                margin: 'auto',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                overflow: 'hidden',
+                border: '1px',
+                borderColor: 'primary.text',
+                animation: 'morphing 10s infinite',
+                '&:hover': {
+                  animationPlayState: 'paused',
+                },
+              }}
             >
-              <Avatar alt="Profile Picture" src={profilePicture} sx={{ width: 220, height: 220, margin: 'auto', border: '3px solid', borderColor: 'primary.main' }}/>
-            </motion.div>
+              {/* The Avatar now sits inside the frame */}
+              <Avatar
+                alt="Profile Picture"
+                src={profilePicture}
+                sx={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover', // Ensures the image covers the frame without distortion
+                  objectPosition: 'top', // Aligns the image to the top
+                }}
+              />
+            </Box>
           </Grid>
           <Grid item xs={12} md={8}>
             <motion.div

@@ -18,7 +18,7 @@ const Skills = ({ data }) => {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
-    <Box ref={ref} sx={{ py: 8 }}>
+    <Box ref={ref} sx={{ py: 8, overflow: 'hidden' }}>
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -42,7 +42,20 @@ const Skills = ({ data }) => {
             >
               {technical.map((skill) => (
                 <motion.div key={skill} variants={itemVariants}>
-                  <Chip label={skill} variant="outlined" color="primary" />
+                  <Chip
+                    label={skill}
+                    variant="outlined"
+                    color="primary"
+                    // --- HOVER EFFECT ADDED HERE ---
+                    sx={{
+                      cursor: 'pointer',
+                      transition: 'transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out',
+                      '&:hover': {
+                        transform: 'scale(1.1)',
+                        boxShadow: '0 0 15px rgba(0, 247, 255, 0.8)', // Glowing cyan effect
+                      },
+                    }}
+                  />
                 </motion.div>
               ))}
             </motion.div>
@@ -55,11 +68,23 @@ const Skills = ({ data }) => {
               variants={listVariants}
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
-              style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}
+              style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}
             >
               {professional.map((skill) => (
                 <motion.div key={skill} variants={itemVariants}>
-                  <Chip label={skill} variant="outlined" />
+                  <Chip label={skill} variant="outlined" 
+                  sx={{
+                      cursor: 'pointer',
+                      transition: 'transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out , margin-right 0.2s ease-in-out, margin-left 0.2s ease-in-out',
+                      '&:hover': {
+                        marginRight:'8px',
+                        marginLeft:'8px',
+                        transform: 'scale(1.1)',
+                        boxShadow: '0 0 15px rgba(255, 255, 255, 0.48)', // Glowing cyan effect
+                      },
+                    }}
+                  
+                  />
                 </motion.div>
               ))}
             </motion.div>
