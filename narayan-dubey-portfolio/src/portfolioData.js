@@ -71,7 +71,7 @@ export const portfolioData = {
       techStack: "MERN",
       description:
         "Created a full-stack polling application allowing students to create and participate in polls. Implemented JWT authentication and real-time updates, boosting user interaction by 40%.",
-      link: "https://student-polling-app.onrender.com/", // Replace # with your project link
+      link: "https://live-polling-app-n7or.onrender.com", // Replace # with your project link
     },
   ],
   education: [
