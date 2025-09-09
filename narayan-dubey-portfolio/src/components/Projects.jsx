@@ -2,7 +2,8 @@
 import { useRef } from 'react';
 import { Container, Typography, Card, CardContent, CardActions, Button, Chip, Box } from '@mui/material';
 import LinkIcon from '@mui/icons-material/Link';
-import { motion, useInView, LayoutGroup } from 'framer-motion'; // Import LayoutGroup
+import { motion, useInView } from 'framer-motion';
+import RotatingBorderCard from './RotatingBorderCard'; // Import the component
 
 const containerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.2 } } };
 const itemVariants = { hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5 } } };
@@ -17,37 +18,22 @@ const Projects = ({ data }) => {
         <Typography variant="h2" component="h2" align="center" gutterBottom sx={{ color: '#FFFFFF', transform: 'translateZ(0)' }}>
           Projects
         </Typography>
-        
-        {/* Wrap the entire grid in LayoutGroup */}
-        <LayoutGroup>
-          <Box
-            component={motion.div}
-            variants={containerVariants}
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-            sx={{
-              mt: 5,
-              display: 'flex',
-              flexWrap: 'wrap',
-              gap: 4,
-            }}
-          >
-            {data.map((project) => (
-              <Box
-                component={motion.div}
-                key={project.title}
-                variants={itemVariants}
-                layout // The layout prop is essential
-                transition={{ type: 'spring', stiffness: 400, damping: 40 }}
-                sx={{
-                  // Responsive widths for Flexbox items
-                  width: {
-                    xs: '100%',
-                    sm: `calc(50% - 16px)`, // 16px is half the gap
-                    md: `calc(33.333% - 22px)`, // ~2/3 of the gap
-                  }
-                }}
-              >
+        <Box
+          component={motion.div}
+          variants={containerVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          sx={{
+            mt: 5,
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+            gap: 4,
+          }}
+        >
+          {data.map((project) => (
+            <motion.div key={project.title} variants={itemVariants} style={{ height: '100%' }}>
+              {/* Wrap the Card with the RotatingBorderCard component */}
+              <RotatingBorderCard>
                 <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', borderRadius: 2, bgcolor: 'background.paper' }}>
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography variant="h6" component="h3" gutterBottom sx={{ color: '#FFFFFF', transform: 'translateZ(0)' }}>
@@ -66,13 +52,12 @@ const Projects = ({ data }) => {
                     </Button>
                   </CardActions>
                 </Card>
-              </Box>
-            ))}
-          </Box>
-        </LayoutGroup>
+              </RotatingBorderCard>
+            </motion.div>
+          ))}
+        </Box>
       </Container>
     </Box>
   );
 };
-
 export default Projects;
