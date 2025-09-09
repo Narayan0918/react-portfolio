@@ -28,7 +28,7 @@ const About = ({ data }) => {
                 justifyContent: 'center',
                 overflow: 'hidden',
                 border: '1px',
-                borderColor: 'primary.text',
+                borderColor: 'primary.main',
                 animation: 'morphing 10s infinite',
                 '&:hover': {
                   animationPlayState: 'paused',
