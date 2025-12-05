@@ -4,32 +4,33 @@ export const portfolioData = {
   personalInfo: {
     name: "Narayan Raj Dubey",
     title: "Full-Stack Web Developer",
-    profilePicture: "/profile-picture.jpg", // Add this line
-    summary: "Results-driven Computer Science graduate specializing in full-stack web development with the MERN stack (MongoDB, Express.js, React, Node.js). Proven ability to deliver scalable, high-performance web applications, demonstrated through internship experience and personal projects. Driven to create efficient, user-centric solutions.",
+    profilePicture: "/profile-picture.jpg", 
+    summary: "Aspiring Frontend Developer with a solid foundation in core Python programming and front-end web technologies (HTML, CSS, JavaScript). Eager to apply my skills in a practical setting and contribute to building efficient and user-friendly applications. A quick learner, passionate about software development and dedicated to continuous skill enhancement .",
     email: "narayanrajdubey9889@gmail.com",
     phone: "7007344437",
     location: "Bhadohi, UP",
     socials: {
-      github: "https://github.com/Narayan0918", // Replace # with your actual GitHub link
-      linkedin: "https://www.linkedin.com/in/narayan-raj-dubey-191bb6223", // Replace # with your actual LinkedIn link
+      github: "https://github.com/Narayan0918", 
+      linkedin: "https://www.linkedin.com/in/narayan-raj-dubey-191bb6223", 
     },
   },
   skills: {
     technical: [
-      "Java",
+      "HTML",
+      "CSS",
       "JavaScript",
-      "SQL",
       "React.js",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
+      "Python",
+      "NumPy",
+      "Pandas",
       "Netlify",
       "Render",
+      "SQL",
       "MySQL",
+      "MongoDB",
       "GitHub",
       "ChatGPT",
-      "Gemini",
-      "Claude",
+      "Co-Pilot",
     ],
     professional: [
       "Strong Interpersonal Communication",
@@ -44,10 +45,9 @@ export const portfolioData = {
       location: "remote",
       duration: "08/2024 - 10/2024",
       description: [
-        "Built 5+ responsive web pages using HTML, CSS, JavaScript, and React.",
-        "Resolved 20+ cross-device layout issues, improving Ul consistency across platforms.",
-        "Pushed 30+ code commits using Git and GitHub in agile sprint cycles.",
-        "Code cleanup improved load time by ~25%.",
+        "Contributed to 5+ responsive web pages, focusing on implementing HTML/CSS layouts and core JavaScript interactivity within a React environment.",         
+        "Identified and resolved over 20 cross-device layout bugs, ensuring a consistent user experience across different browsers and screen sizes.",
+        "Optimized front-end code through strategic refactoring, resulting in a 25% improvement in page load times.",
       ],
     },
   ],
@@ -56,22 +56,22 @@ export const portfolioData = {
       title: "Localized On-Demand Service Provider Platform",
       techStack: "MERN Stack",
       description:
-        "Engineered a full-stack platform enabling users to book verified local service workers. Implemented secure, role-based authentication and real-time messaging, increasing user engagement by 30%.",
-      link: "https://service-provider-jzwr.onrender.com/", // Replace # with your project link
+        " Contributed to the frontend of a full-stack platform in a collaborative college group project. Built the user registration and login forms, including client-side validation to check for empty fields and valid email format.",
+      link: "https://service-provider-jzwr.onrender.com/", 
     },
     {
       title: "E-commerce Web App",
       techStack: "JavaScript, HTML, CSS",
       description:
-        "Built a responsive e-commerce interface with category filtering, product modals, and client-side search, achieving sub-2.5 second load times and enhanced SEO.",
-      link: "https://narayan0918.github.io/Bottle-landing-page/", // Replace # with your project link
+        " Refactored a 550-line static HTML/CSS project into a modular React application. Converted hardcoded HTML into dynamic components by rendering product data from a centralized JavaScript array.",
+      link: "https://narayan0918.github.io/Bottle-landing-page/", 
     },
     {
       title: "Student Polling App",
       techStack: "MERN",
       description:
         "Created a full-stack polling application allowing students to create and participate in polls. Implemented JWT authentication and real-time updates, boosting user interaction by 40%.",
-      link: "https://live-polling-app-n7or.onrender.com", // Replace # with your project link
+      link: "https://live-polling-app-n7or.onrender.com", 
     },
   ],
   education: [
