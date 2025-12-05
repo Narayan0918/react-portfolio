@@ -94,7 +94,7 @@ export const portfolioData = {
       techStack: "Python, Pickle (Serialization), File I/O",
       description:
         "Built a modular command-line CRUD application to manage employee records efficiently. Utilized Python's pickle module for binary serialization, enabling persistent data storage and retrieval directly via the file system without requiring an external database.",
-      link: "#",
+      link: "https://github.com/Narayan0918/Employee-Mgmnt-System-Python-.git",
     },
   ],
   education: [
