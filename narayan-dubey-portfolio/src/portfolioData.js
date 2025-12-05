@@ -87,7 +87,7 @@ export const portfolioData = {
       techStack: "Python, Custom Exception Handling, Modular Programming",
       description:
         "Designed a modular command-line application simulating core banking operations like deposits, withdrawals, and balance tracking. Implemented robust validation logic and custom exception classes to handle edge cases, ensuring transaction stability and secure input processing.",
-      link: "#",
+      link: "https://github.com/Narayan0918/ATM-project.git",
     },
     {
       title: "File-Based Employee Management System",
