@@ -82,6 +82,20 @@ export const portfolioData = {
         "Developed a full-stack research platform featuring dynamic content management for blogs, legal publications, and event schedules. Implemented advanced UI animations and a responsive layout to enhance user engagement and accessibility.",
       link: "#",
     },
+    {
+      title: "CLI ATM Banking System",
+      techStack: "Python, Custom Exception Handling, Modular Programming",
+      description:
+        "Designed a modular command-line application simulating core banking operations like deposits, withdrawals, and balance tracking. Implemented robust validation logic and custom exception classes to handle edge cases, ensuring transaction stability and secure input processing.",
+      link: "#",
+    },
+    {
+      title: "File-Based Employee Management System",
+      techStack: "Python, Pickle (Serialization), File I/O",
+      description:
+        "Built a modular command-line CRUD application to manage employee records efficiently. Utilized Python's pickle module for binary serialization, enabling persistent data storage and retrieval directly via the file system without requiring an external database.",
+      link: "#",
+    },
   ],
   education: [
     {
