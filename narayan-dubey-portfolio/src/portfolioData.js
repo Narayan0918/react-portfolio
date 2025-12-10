@@ -80,7 +80,7 @@ export const portfolioData = {
       techStack: "MERN Stack, Next.js, Tailwind CSS, Framer Motion",
       description:
         "Developed a full-stack research platform featuring dynamic content management for blogs, legal publications, and event schedules. Implemented advanced UI animations and a responsive layout to enhance user engagement and accessibility.",
-      link: "criminal-law-research-vq3v.vercel.app",
+      link: "https://criminal-law-research-vq3v.vercel.app/",
     },
     {
       title: "CLI ATM Banking System",
