@@ -74,6 +74,13 @@ export const portfolioData = {
         "Created a full-stack polling application allowing students to create and participate in polls. Implemented JWT authentication and real-time updates, boosting user interaction by 40%.",
       link: "https://live-polling-app-n7or.onrender.com",
     },
+    {
+      title: "Unified Alumni Connection Platform",
+      techStack: "React.js, Vite, Tailwind CSS, Node.js, Express.js, PostgreSQL",
+      description:
+        "A multi-tenant full-stack solution (Web & Mobile) for alumni networking, built with React and PostgreSQL using an AI-assisted workflow to optimize architecture and deployment speed.",
+      link: "https://live-polling-app-n7or.onrender.com",
+    },
     // ------------------------------------------
     {
       title: "Criminal Law Research Center",
