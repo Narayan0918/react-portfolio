@@ -79,7 +79,7 @@ export const portfolioData = {
       techStack: "React.js, Vite, Tailwind CSS, Node.js, Express.js, PostgreSQL",
       description:
         "A multi-tenant full-stack solution (Web & Mobile) for alumni networking, built with React and PostgreSQL using an AI-assisted workflow to optimize architecture and deployment speed.",
-      link: "https://live-polling-app-n7or.onrender.com",
+      link: "https://live-polling-app-n7or.onrender.com", //need to update the live link
     },
     // ------------------------------------------
     {
