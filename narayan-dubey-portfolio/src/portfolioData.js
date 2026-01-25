@@ -90,11 +90,11 @@ export const portfolioData = {
       link: "https://criminal-law-research-vq3v.vercel.app/",
     },
     {
-      title: "CLI ATM Banking System",
+      title: "CLI Banking System",
       techStack: "Python, Custom Exception Handling, Modular Programming",
       description:
         "Designed a modular command-line application simulating core banking operations like deposits, withdrawals, and balance tracking. Implemented robust validation logic and custom exception classes to handle edge cases, ensuring transaction stability and secure input processing.",
-      link: "https://github.com/Narayan0918/ATM-project.git",
+      link: "https://github.com/Narayan0918/Banking-project-python.git",
     },
     {
       title: "File-Based Employee Management System",
