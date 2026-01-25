@@ -6,7 +6,7 @@ export const portfolioData = {
     title: "Full-Stack Developer",
     profilePicture: "/profile-picture.jpg",
     summary:
-      "Aspiring Frontend Developer with a solid foundation in core Python programming and front-end web technologies (HTML, CSS, JavaScript). Eager to apply my skills in a practical setting and contribute to building efficient and user-friendly applications. A quick learner, passionate about software development and dedicated to continuous skill enhancement .",
+      "Python Developer with practical experience in object-oriented programming and backend logic. Focused on building modular command-line tools, automating data management tasks, and optimizing algorithms. Skilled in writing clean, maintainable code using Python, NumPy, and file-handling protocols.",
     email: "narayanrajdubey9889@gmail.com",
     phone: "7007344437",
     location: "Bhadohi, UP",
