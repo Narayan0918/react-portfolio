@@ -3,7 +3,7 @@
 export const portfolioData = {
   personalInfo: {
     name: "Narayan Raj Dubey",
-    title: "Full-Stack Web Developer",
+    title: "Full-Stack Developer",
     profilePicture: "/profile-picture.jpg",
     summary:
       "Aspiring Frontend Developer with a solid foundation in core Python programming and front-end web technologies (HTML, CSS, JavaScript). Eager to apply my skills in a practical setting and contribute to building efficient and user-friendly applications. A quick learner, passionate about software development and dedicated to continuous skill enhancement .",
@@ -13,6 +13,7 @@ export const portfolioData = {
     socials: {
       github: "https://github.com/Narayan0918",
       linkedin: "https://www.linkedin.com/in/narayan-raj-dubey-191bb6223",
+      Leetcode:"https://leetcode.com/u/0TeDDY0/",
     },
   },
   skills: {
