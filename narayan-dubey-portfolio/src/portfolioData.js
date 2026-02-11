@@ -13,7 +13,7 @@ export const portfolioData = {
     socials: {
       github: "https://github.com/Narayan0918",
       linkedin: "https://www.linkedin.com/in/narayan-raj-dubey-191bb6223",
-      Leetcode:"https://leetcode.com/u/0TeDDY0/",
+      Leetcode: "https://leetcode.com/u/0TeDDY0/",
     },
   },
   skills: {
@@ -74,7 +74,8 @@ export const portfolioData = {
     },
     {
       title: "Unified Alumni Connection Platform",
-      techStack: "React.js, Vite, Tailwind CSS, Node.js, Express.js, PostgreSQL",
+      techStack:
+        "React.js, Vite, Tailwind CSS, Node.js, Express.js, PostgreSQL",
       description:
         "A multi-tenant full-stack solution (Web & Mobile) for alumni networking, built with React and PostgreSQL using an AI-assisted workflow to optimize architecture and deployment speed.",
       link: "https://live-polling-app-n7or.onrender.com", //need to update the live link
@@ -100,6 +101,13 @@ export const portfolioData = {
       description:
         "Built a modular command-line CRUD application to manage employee records efficiently. Utilized Python's pickle module for binary serialization, enabling persistent data storage and retrieval directly via the file system without requiring an external database.",
       link: "https://github.com/Narayan0918/Employee-Mgmnt-System-Python-.git",
+    },
+    {
+      title: "Smart Bank Management System",
+      techStack: "Django & TiDB",
+      description:
+        "Developed a secure cloud-native banking platform allowing users to manage accounts and perform real-time transactions. Integrated a distributed TiDB MySQL database with SSL encryption and Cloudinary for media optimization, ensuring a scalable production architecture on Render.",
+      link: "https://bank-management-pek6.onrender.com/",
     },
   ],
   education: [
