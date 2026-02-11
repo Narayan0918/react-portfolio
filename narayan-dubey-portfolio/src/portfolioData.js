@@ -52,6 +52,13 @@ export const portfolioData = {
   ],
   projects: [
     {
+      title: "Smart Bank Management System",
+      techStack: "Django & TiDB",
+      description:
+        "Developed a secure cloud-native banking platform allowing users to manage accounts and perform real-time transactions. Integrated a distributed TiDB MySQL database with SSL encryption and Cloudinary for media optimization, ensuring a scalable production architecture on Render.",
+      link: "https://bank-management-pek6.onrender.com/",
+    },
+    {
       title: "Localized On-Demand Service Provider Platform",
       techStack: "MERN Stack",
       description:
@@ -101,13 +108,6 @@ export const portfolioData = {
       description:
         "Built a modular command-line CRUD application to manage employee records efficiently. Utilized Python's pickle module for binary serialization, enabling persistent data storage and retrieval directly via the file system without requiring an external database.",
       link: "https://github.com/Narayan0918/Employee-Mgmnt-System-Python-.git",
-    },
-    {
-      title: "Smart Bank Management System",
-      techStack: "Django & TiDB",
-      description:
-        "Developed a secure cloud-native banking platform allowing users to manage accounts and perform real-time transactions. Integrated a distributed TiDB MySQL database with SSL encryption and Cloudinary for media optimization, ensuring a scalable production architecture on Render.",
-      link: "https://bank-management-pek6.onrender.com/",
     },
   ],
   education: [
